@@ -1,0 +1,25 @@
+{
+  "name": "mutant-detector",
+  "version": "1.0.0",
+  "description": "api that detects if a dna sequence is from a mutant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fquincke/Mercado-Libre-code-challenge.git"
+  },
+  "author": "Francisco Quincke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fquincke/Mercado-Libre-code-challenge/issues"
+  },
+  "homepage": "https://github.com/fquincke/Mercado-Libre-code-challenge#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
