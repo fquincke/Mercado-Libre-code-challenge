@@ -12,23 +12,23 @@ exports.verify = function(dna) {
 };
 
 checkNitrogenBase = function(dna, row, col) {
-    const letter = dna[row][col];
+    const nitrogenBase = dna[row][col];
 
     const canGoDown = row+3 < dna.length;
     const canGoRight = col+3 < dna[0].length;
     const canGoDiagonalRight = row+3 < dna.length && col+3 < dna[row].length;
     const canGoDiagonalLeft = row+3 < dna.length && col-3 < dna[row].length;
 
-    if(canGoRight && letter === dna[row][col+1] && letter === dna[row][col+2] && letter === dna[row][col+3]) {
+    if(canGoRight && nitrogenBase === dna[row][col+1] && nitrogenBase === dna[row][col+2] && nitrogenBase === dna[row][col+3]) {
         return true;
     }
-    if(canGoDown && letter === dna[row+1][col] && letter === dna[row+2][col] && letter === dna[row+3][col]) {
+    if(canGoDown && nitrogenBase === dna[row+1][col] && nitrogenBase === dna[row+2][col] && nitrogenBase === dna[row+3][col]) {
         return true;
     }
-    if(canGoDiagonalRight && letter === dna[row+1][col+1] && letter === dna[row+2][col+2] && letter === dna[row+3][col+3]) {
+    if(canGoDiagonalRight && nitrogenBase === dna[row+1][col+1] && nitrogenBase === dna[row+2][col+2] && nitrogenBase === dna[row+3][col+3]) {
         return true;
     }
-    if(canGoDiagonalLeft && letter === dna[row+1][col-1] && letter === dna[row+2][col-2] && letter === dna[row+3][col-3]) {
+    if(canGoDiagonalLeft && nitrogenBase === dna[row+1][col-1] && nitrogenBase === dna[row+2][col-2] && nitrogenBase === dna[row+3][col-3]) {
         return true;
     }
     return false;
