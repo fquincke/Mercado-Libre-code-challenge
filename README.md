@@ -1,6 +1,8 @@
 # Mercado-Libre-code-challenge
 Code challenge para entrevista en Mercado Libre
 
+Para acceder invocar al endpoint, se envía en el request on objeto JSON con la propiedad "dna", la cual es el array de strings
+
 Asumo que la diagonal que no se muestra en el ejemplo tambien se considera de un mutante (diagonal hacia abajo e izquierda)
 
 Valido que no hayan letras incorrectas en el array en validator

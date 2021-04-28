@@ -1,7 +1,7 @@
 const mutantService = require('../services/mutantServices');
 
 exports.verifyDna = function(req, res) {
-    const dna = req.body;
+    const dna = req?.body?.dna;
     if(validateDna(dna)){
 
         const isMutant = mutantService.verify(dna);
