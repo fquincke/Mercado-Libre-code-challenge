@@ -1,4 +1,8 @@
 exports.validateDna = function (dna) {
+    if(!dna[0]){
+        return false;
+    }
+
     const strLength = dna[0].length; 
     
     for (let text of dna) {
