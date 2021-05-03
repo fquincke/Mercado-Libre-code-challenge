@@ -11,7 +11,7 @@ exports.verify = function(dna) {
     return false;
 };
 
-checkNitrogenBase = function(dna, row, col) {
+var checkNitrogenBase = function(dna, row, col) {
     const nitrogenBase = dna[row][col];
 
     const canGoDown = row+3 < dna.length;
@@ -33,3 +33,4 @@ checkNitrogenBase = function(dna, row, col) {
     }
     return false;
 };
+

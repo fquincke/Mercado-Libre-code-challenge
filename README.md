@@ -11,4 +11,7 @@ Asumo que el largo de cada uno de los strings del array es fijo para cada reques
 Valido que no hayan letras incorrectas en el array
 Valido que se envie correctamente un array de strings y no otro tipo en el objeto dna del request
 
+Notas adicionales:
 Cuando falla en alguna de las validaciones implementadas se retorna un código 400 para diferenciar los errores del request con la comprobacion de si es un mutante o no
+El primer request luego de 30 minutos puede demorar o incluso dar timeout debido al nivel gratuito de hosting de heroku, el cual duerme la aplicación cuando esta se encuentra inactiva
+
